@@ -30,6 +30,18 @@ const IntractiveComponent = ({ x, y, z }: IntractiveComponentProps) => {
         return x*x*x
     }
 
+    const is_vowel = (ch: string): boolean => {
+        return (ch ==="a" || ch ==="e" || ch ==="i" || ch ==="o" || ch ==="u" || ch ==="A" || ch ==="E" || ch ==="I" || ch ==="O" || ch ==="U")
+        
+            
+    }
+
+    const is_Consonent =(ch: string): boolean => {
+        const vowel_list = ['a', 'e', 'i', 'o', 'u']
+        const ch = chr 
+    }
+
+
 
     return (
         <div>
@@ -38,6 +50,7 @@ const IntractiveComponent = ({ x, y, z }: IntractiveComponentProps) => {
             <h1>Result:{isEven(1) ? "Even" : "Not Even"}</h1>
             <h1>Result:{isOdd(6)? "Odd" : "Not Odd"}</h1>
             <h1>CubeResult= {numOfCube(3)}</h1>
+           <h1>IsVowel= {is_vowel("A") ? "Vowel" : "Consonent"}</h1>
         </div>
     )
 }
